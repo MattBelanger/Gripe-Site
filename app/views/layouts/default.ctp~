@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<?php echo $this->Html->charset(); ?>
+	<title>
+		<?php __('The OLP Gripe Site'); ?>
+		<?php echo $title_for_layout; ?>
+	</title>
+	<?php
+		echo $this->Html->meta('icon');
+
+		echo $this->Html->css('reset');
+		echo $this->Html->css('style');
+
+		echo $scripts_for_layout;
+	?>
+  <script type="text/javascript" src="/js/tiny_mce/tiny_mce.js" ></script >
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/search">Search</a></li>
+          <li id="SubmitLink"><a href="/submit">Share Your Story</a></li>
+        </ul>
+      </div>
+      <div id="UserInfo">
+      <?php if ($user) { ?>
+           Welcome <?= $user['User']['username']; ?>.  <? if ($user['User']['usertype'] > 1) { print '<a href="/admin">Admin</a>'; } ?>  <a id="logout" href="/users/logout">Logout</a>
+      <?php } else { ?>
+           <a href="/users/login">Login Now</a>
+      <?php } ?>
+      </div>
+			<h1><a href="/">The OLP Gripe Site</a></h1>
+      <h3>Stories of Government Waste, Incompetence and Bureaucratic Bullying</h3>
+		</div>
+		<div id="content">
+
+			<?php echo $this->Session->flash(); ?>
+
+			<?php echo $content_for_layout; ?>
+
+		</div>
+		<div id="footer">
+      A project of <a href="http://libertarian.on.ca" target="_blank">The Ontario Libertarian Party</a>
+		</div>
+	</div>
+	<?php echo $this->element('sql_dump'); ?>
+</body>
+</html>

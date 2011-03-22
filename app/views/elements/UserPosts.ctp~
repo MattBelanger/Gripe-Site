@@ -1,0 +1,11 @@
+  <div id="UserPosts">
+    <h2>Posts</h2>
+    <?php foreach ($user['Post'] as $p) { ?>
+    <div class="post">
+      <h3><?php echo $this->Html->link(__($p['title'], true), array('action' => 'view', $p['slug'])); ?></h3>
+      <div class="postbit">Posted On <?php echo date('Y-m-d',strtotime($p['time_posted'])); ?></div>
+      <div class="teaser"><?php echo $p['teaser']; ?></div>
+      <p class="readmore"><?php echo $this->Html->link(__('read more', true), array('action' => 'view', $p['slug'])); ?></p>
+        </div>
+      <?php } ?>
+  </div>

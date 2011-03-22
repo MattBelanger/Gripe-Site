@@ -1,0 +1,10 @@
+<div id="Comments">
+  <h3>Comments</h3>
+  <?php foreach ($comments as $c) { ?>
+  <div class="postbit">Posted On <?php echo date('Y-m-d',strtotime($c['created'])); ?> by <?=$c['User']['username'];?>
+  <div class="commentbody"><?=$c['body'];?></div>
+  <?php
+    }
+   echo $this->element('AddComment', array('user' => $activeUser, 'post' => $post));
+  ?>
+</div>

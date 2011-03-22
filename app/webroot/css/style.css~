@@ -1,0 +1,219 @@
+a, a:visited {
+  color:#000066;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+em {
+  font-style:italic;
+}
+
+#content ul, #content ol {
+  margin-left: 30px;
+}
+
+#content li {
+  padding-left: 5px;
+}
+
+.form-note {
+  font-size: 0.9em;
+}
+
+form .form-note {
+  margin: 0 30px;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+  vertical-align:top;
+}
+
+#container {
+  width:800px;
+  margin: 0 auto;
+}
+
+#header {
+  position:relative;
+  text-align:center;
+}
+
+#header h1 {
+  font-weight:bold;
+  font-size:1.6em;
+  padding-top:50px;
+}
+
+#header h1 a {
+  color:#00882D;
+  text-decoration: none;
+}
+
+#header h3 {
+  color:#666;
+  font-style:italic;
+}
+
+.view h2 {
+  color:#00882D;
+}
+
+#menu {
+  position:absolute;
+  right: 0;
+}
+
+#menu li {
+  list-style:none;
+  height: 30px;
+  padding: 15px 8px 0;
+  background-color: #006;
+  float:right;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAF', endColorstr='#006'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#AAF), to(#006)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #AAF,  #006); /* for firefox 3.6+ */
+  position:relative;
+  top:-15px;
+  margin: 0 1px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border:1px solid #006;
+}
+
+#menu li:hover, #menu #SubmitLink {
+  top: -5px;
+}
+
+#menu a, #menu a:visited, #menu a:hover {
+  color:#EDEDED;
+  text-decoration:none;
+  padding-top:15px;
+}
+
+#content {
+  margin-top:20px;
+}
+
+#content h2 {
+  font-size:1.4em;
+  font-weight:bold;
+}
+
+#content .post {
+  margin-top: 10px;
+}
+
+#content .post h3 a {
+  font-size:1.2em;
+  text-decoration: none;
+}
+
+.postbit {
+  font-size:0.8em;
+  color:#666;
+}
+
+.readmore {
+  text-align:right;
+  margin-right:10px;
+}
+
+.separator {
+  margin: 5px 35px;
+  height:1px;
+  background-color:#00882D;
+}
+
+.postbody {
+  margin-top:10px;
+}
+
+#footer {
+  margin: 30px 0 0;
+  font-size:0.8em;
+  color:#666;
+}
+
+#PostSaveForm .mceEditor {
+  bottom:20px;
+  left: 100px;
+}
+
+.message {
+  width: 600px;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 5px;
+  font-size: 1.1em;
+  text-align:center;
+  border:3px ridge #000;
+}
+
+.errormessage {
+  background-color:#FFAAAA;
+  color: #600;
+  border-color: #600;
+}
+
+.successmessage {
+  background-color:#AAFFAA;
+  color: #060;
+  border-color: #060;
+}
+
+#UserInfo {
+  left: 0;
+  position: absolute;
+  top: 0;
+  text-align:left;
+}
+
+#logout {
+  color: #00882D;
+}
+
+#AdminStats {
+  margin: 30px 0;
+}
+
+#AdminStats td {
+  padding: 2px 5px
+}
+
+tr.even {
+  background-color: #CCFFDE;
+}
+
+#UserPosts {
+  margin: 10px 0;
+}
+
+#UserPosts h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.inmoderation {
+  background-color:#FFFF99;
+}
+.denied {
+  background-color:#FFCCCC;
+}
+.modlink, .modlink:visited,.modlink:hover {
+  background-color:#FFFF99;
+  color:#990000;
+}
+#Comments {
+  margin: 15px 0 15px 30px;
+}
+#Comments h3 {
+  font-weight: bold;
+  color: #00882D;
+}
+#Comments h4 {
+  font-weight: bold;
+}

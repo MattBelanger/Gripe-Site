@@ -1,0 +1,5 @@
+<?php
+echo $form->create('search');
+echo $form->input('term', array('label' => 'Search For: '));
+echo $form->submit();
+?>

@@ -1,0 +1,17 @@
+<?php
+class SearchController extends AppController {
+
+	var $name = 'Search';
+	var $components = array('Auth');
+  var $uses = '';
+
+	function index() {
+
+	}
+
+  function results() {
+
+  }
+
+}
+?>

@@ -1,0 +1,14 @@
+<?php
+class AdminController extends AppController {
+
+	var $uses = array('User','Post');
+
+  function beforeFilter() {
+    parent::beforeFilter();
+    if ($user['User']['usertype'] < 2) {
+      $this->Auth->deny($this->action);
+    }
+  }
+
+}
+?>
